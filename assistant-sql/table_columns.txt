@@ -1,0 +1,30 @@
+=== SCHEMA DE BASE DE DONNÉES ===
+
+📋 TABLE: dbo.utilisateurs
+COLONNES:
+  • id (int, NOT NULL)
+  • nom (nvarchar, NULL)
+  • pays (nvarchar, NULL)
+  • date_inscription (date, NULL)
+EXEMPLE:
+  id: 1
+  nom: Selim
+  pays: Tunisie
+  date_inscription: 2023-01-10
+
+------------------------------------------------------------
+
+📋 TABLE: dbo.commandes
+COLONNES:
+  • id (int, NOT NULL)
+  • utilisateur_id (int, NULL)
+  • montant (float, NULL)
+  • date_commande (date, NULL)
+EXEMPLE:
+  id: 101
+  utilisateur_id: 1
+  montant: 120.5
+  date_commande: 2023-06-01
+
+------------------------------------------------------------
+
