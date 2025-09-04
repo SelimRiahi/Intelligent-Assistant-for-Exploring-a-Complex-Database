@@ -170,7 +170,7 @@ const QuantumNeuralInterface = () => {
     setHologramActive(true);
     
     try {
-      const response = await fetch('http://localhost:7071/api/set-db-config', {
+      const response = await fetch('https://func-sql-chatbot-selim-awfcg0hchvbvg4gh.westeurope-01.azurewebsites.net/api/set-db-config', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(config)
@@ -221,7 +221,7 @@ const QuantumNeuralInterface = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:7071/api/chat', {
+      const response = await fetch('https://func-sql-chatbot-selim-awfcg0hchvbvg4gh.westeurope-01.azurewebsites.net/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: phrase })
